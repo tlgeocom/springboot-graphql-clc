@@ -3,6 +3,9 @@
 #### 介绍
 关于GraphQL的java开发代码
 
+### graphql-java
+java版的demo
+
 #### 软件架构
 软件架构说明
 

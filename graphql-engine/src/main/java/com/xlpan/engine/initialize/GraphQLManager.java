@@ -1,9 +1,7 @@
 package com.xlpan.engine.initialize;
 
-import graphql.GraphQL;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -31,6 +29,4 @@ public class GraphQLManager {
             log.error("GraphQLManager#init", e);
         }
     }
-
-
 }

@@ -4,6 +4,9 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/graphql-springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/graphql-java/pom.xml" />
+        <option value="$PROJECT_DIR$/graphql-engine/pom.xml" />
+        <option value="$PROJECT_DIR$/test-post-construct/pom.xml" />
       </list>
     </option>
   </component>

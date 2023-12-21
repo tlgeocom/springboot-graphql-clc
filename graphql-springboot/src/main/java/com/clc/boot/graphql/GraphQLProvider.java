@@ -17,7 +17,7 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * 实现功能：将GraphQL对象载入待Spring容器，并且完成GraphQL对象初始化的功能
+ * 实现功能：将GraphQL对象载入到Spring容器，并且完成GraphQL对象初始化的功能
  *
  * @author chengluchao
  */

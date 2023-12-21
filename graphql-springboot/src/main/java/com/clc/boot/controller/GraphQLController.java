@@ -1,12 +1,11 @@
 package com.clc.boot.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import graphql.ExecutionResult;
 import graphql.GraphQL;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 
 /**
@@ -23,10 +22,10 @@ public class GraphQLController {
     @Autowired
     private GraphQL graphQL;
 
-    @RequestMapping("query")
+    @PostMapping("query")
     @ResponseBody
-    public Object query(@RequestParam("query") String query) {
-        ExecutionResult result = this.graphQL.execute(query);
+    public Object query(@RequestBody JSONObject request) {
+        ExecutionResult result = this.graphQL.execute((String)request.get("query"));
         return result.toSpecification();
     }
 }
